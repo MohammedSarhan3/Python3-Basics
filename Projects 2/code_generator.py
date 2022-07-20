@@ -13,3 +13,14 @@ def encoded(txt):
 
 nw=encoded(txt)
 print(nw)
+
+#the second one decode the message to the original text
+
+def decode(nw):
+
+    for specialChar in nw:
+        nw = nw.replace( specialChar, "15") 
+    print(nw)
+    return
+
+decode(nw)
